@@ -6,6 +6,6 @@ const port = process.env.PORT || 4000;
 
 server.use(middlewares);
 server.use(router);
-server.listen(3000, () => {
-  console.log('JSON Server is running on ${port}')
+server.listen(port, () => {
+  console.log('JSON Server is running on ' + port)
 });
